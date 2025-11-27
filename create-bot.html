@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create AI Bot</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛠️ Create AI Bot</h1>
+            <a href="/" class="back-link">← Kembali</a>
+        </header>
+
+        <div class="form-container">
+            <form id="createBotForm">
+                <div class="form-group">
+                    <label for="botName">Nama Bot:</label>
+                    <input type="text" id="botName" required placeholder="Masukkan nama untuk bot Anda">
+                </div>
+
+                <div class="form-group">
+                    <label for="botDescription">Deskripsi Bot:</label>
+                    <textarea id="botDescription" required placeholder="Jelaskan tentang bot Anda"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="botPersona">Persona Bot:</label>
+                    <textarea id="botPersona" required placeholder="Tentukan persona bot (contoh: 'Anda adalah asisten yang ramah dan membantu', 'Anda adalah karakter anime Naruto', dll)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="profileImage">URL Gambar Profil:</label>
+                    <input type="url" id="profileImage" required placeholder="https://example.com/image.jpg">
+                </div>
+
+                <div class="form-group">
+                    <label for="creatorName">Nama Creator (opsional):</label>
+                    <input type="text" id="creatorName" placeholder="Nama Anda">
+                </div>
+
+                <button type="submit" class="btn-primary">Create Bot</button>
+            </form>
+        </div>
+
+        <div id="successMessage" class="success-message hidden">
+            <h3>✅ Bot Berhasil Dibuat!</h3>
+            <p>Link chatbot Anda: <a id="botLink" href="#">Klik di sini</a></p>
+            <button onclick="copyLink()" class="btn-secondary">Salin Link</button>
+        </div>
+    </div>
+
+    <script src="js/create-bot.js"></script>
+</body>
+</html>

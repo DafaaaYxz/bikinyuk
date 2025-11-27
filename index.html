@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bot Creator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Bot Creator</h1>
+            <p>Buat dan bagikan chatbot AI Anda sendiri!</p>
+        </header>
+
+        <div class="hero-section">
+            <button class="btn-primary" onclick="createBot()">
+                🚀 Create AI Bot Anda
+            </button>
+        </div>
+
+        <div class="bots-section">
+            <h2>🤖 Bot Publik</h2>
+            <div id="botsList" class="bots-grid">
+                <!-- Bots will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
